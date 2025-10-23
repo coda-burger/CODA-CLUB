@@ -175,8 +175,9 @@
 
     .points-section .card img {
       width: 100%;
-      height: 180px;          /* 🔹 all images same height */
-      object-fit: cover;      /* 🔹 keeps proportions, crops overflow */
+      height: 180px;          
+      object-fit: contain;       
+      background-color: #1f1f1f;      
       border-radius: 12px;
       margin-bottom: 1rem;
     }
@@ -615,6 +616,10 @@
         flex: 0 0 100%;
       }
 
+      .points-section .card img {
+        height: 140px; /* smaller image on mobile */
+      }
+
       .earn-points-section .scroll-container .card {
         flex: 0 0 100%;
       }
@@ -622,6 +627,7 @@
       .earn-points-section .extra-scroll-container .extra-card {
         flex: 0 0 100%;
       }
+      
     }
 
   </style>
@@ -663,7 +669,7 @@
       <div class="scroll-container">
         <div class="card"><img src="https://i.imgur.com/R1yWOqk.jpeg"><h3>BURGERS</h3><p>A PARTIR DE 249 PONTOS</p></div>
         <div class="card"><img src="https://i.imgur.com/1NLngWg.jpeg"><h3>PIZZAS</h3><p>A PARTIR DE 359 PONTOS</p></div>
-        <div class="card"><img src="https://i.imgur.com/oxJWsQ0.jpeg"><h3>ALMOÇOS</h3><p>A PARTIR DE 239 PONTOS</p></div>
+        <div class="card"><img src="https://i.imgur.com/HcMbbry.jpeg"><h3>ALMOÇOS</h3><p>A PARTIR DE 239 PONTOS</p></div>
         <div class="card"><img src="https://i.imgur.com/6lXm1p0.jpeg"><h3>MOLHOS</h3><p>49 PONTOS</p></div>
         <div class="card"><img src="https://i.imgur.com/j3hmciR.jpeg"><h3>FRETE GRÁTIS</h3><p>60 PONTOS</p></div>
         <div class="card"><img src="https://via.placeholder.com/250x150"><h3>CHAVEIRO</h3><p>60 PONTOS</p></div>
